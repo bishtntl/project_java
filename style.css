@@ -1,0 +1,988 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.global{
+    height: 400px;
+    width:0px;
+    /* position: relative;
+    left: -40; */
+}
+.parent{
+    float: left;
+    height: 700px;
+    width:680px;
+     position: relative;
+    left: 50px; 
+    /* left: -180; */
+    
+}
+.aa{
+    height: 200px;
+    z-index: -1;
+    background-color: white;
+    /*  opacity: 0.8; */
+
+}
+.ll{
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+
+body{
+    background-color: #3D087B;
+}
+.clock{
+    height: 10vh;
+    width: 10vw;
+     margin-top: 40px; 
+    margin-left: 100px; 
+  
+}
+img{
+    height: 8vh;
+    width: 10vw;
+    /* margin:40px 0px 0px 100px; */
+}
+.main{
+    height: 350px;
+    width: 640px;
+    background-color: #FFFFFF;
+    margin:30px 0px 0px 20px;
+    border-radius: 5px;
+    position: absolute;
+    left:0;
+}
+#wake{
+    font-size: x-large; 
+    color:blue;
+    margin-left: 20px; 
+    
+
+   
+
+}
+.tim{
+    width: 300px;
+    height: 30px;
+}
+
+#k,#l{
+width: 34px;
+height: 34px;
+margin-top: 10px;
+margin-left: 20px;
+opacity: 1;
+
+}
+#g{
+width: 34px;
+height: 34px;
+margin-top: 10px;
+margin-left: 20px;
+opacity: 1;
+}
+.time,.eve,.tee{
+    margin-top: 20px;
+}
+.good{
+    height: 200px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: auto  300px;
+    /* grid-template-rows: 40x; */
+    margin-left: 20px;
+    /* margin-top:0px; */
+    gap: 8px;
+    position: absolute;
+    top: 480px;
+    left: 0;
+    
+}
+#a{
+    /* border: 2px solid black; */
+    grid-column: 1/3;
+    font: normal normal 900 27px/34px Bauhaus Hv BT;
+    background-color: #9140B5;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+
+    
+}
+.b{
+    /* border: 2px solid black; */
+    background-image: linear-gradient(to left,#FC5EFF,#6E54EC);
+    font: normal normal 600 24px/38px Manrope;
+    text-align: center;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding:10px;
+    overflow: hidden;   
+    position: relative;
+    
+    
+}
+.b:hover{
+    background-image: linear-gradient(to left,#4825f9,#e411e8);
+
+}
+#o::after,#o::before{
+    content: "SET ALARM";
+    transition: all;
+     position: absolute;
+     left: 50px;
+     top: 20px;
+     font-size: 20px;
+     font: normal normal 600 24px/38px Manrope;
+        
+}
+#o:hover:after{
+    transform: translatex(-200px); 
+
+}
+#o::before{
+    content: "PARTY TIME";
+   left: -150px;
+}
+#o:hover:before{
+    left: 50px;
+}
+
+
+
+.c{
+    /* border: 2px solid black; */
+    grid-column: 2/3;
+    grid-row: 2/4;
+    color: #FC5EFF;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal bold 15px/25px Manrope;
+    background-color: #9140B5;
+}
+/* /* **************************************************************************************************************************************************************** *
+*/
+ /* .global2{
+    float: right;
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    height: 400px;
+    width: 0px;
+    position: relative;
+    top: 0;
+}  */
+.parent2{
+    height: 710px;  
+    width:600px;
+    float: right;
+    margin-right: 150px;
+    position: absolute;
+    right:20px;
+    top: 0;   
+}
+.clockk{
+    height: 150px;
+    width: 550px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-right:20px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    /* z-index: 0; */
+    
+}
+/* .yahoo{
+    position: relative;
+} */
+.box{
+    height: 70px;
+    width: 80px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 0px white;
+
+}
+#box1{
+    font-size: 2em;
+    text-align: center;
+   
+    
+}
+
+#box4{
+    font-size: 2em;
+    border: 2px solid black;
+   
+   text-align: center;
+    
+    background-color: #F6E2FF;
+    
+
+}
+#box2{
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #F6E2FF;
+
+}
+#box3{
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #F6E2FF;
+    
+}
+#box5{
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #F25CFE;
+}
+.dot{
+    color: #F25CFE;
+    font-size: 50px;
+}
+ #shadow1{
+    height: 100px;
+    width: 450px;
+    background-color: hsla(0, 0%, 100%, 0.758);
+    border-radius: 10px;
+    position: absolute;
+    top: 90px; 
+    right: 60px;
+ z-index: -1; 
+} 
+#shadow2{ 
+    height: 100px;
+    width: 400px;
+    background-color: #ad75acf4;
+    border-radius: 10px;
+    position: absolute;
+    top: 105px; 
+    right:90px;
+    z-index: -2; 
+ } 
+.msg{
+    height: 100px;
+    width: 550px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+}
+#grab{
+    font-size:2em;
+    color:blue;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+    
+}
+.morning{
+    height: 380px;
+    width: 550px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    
+}
+#last{
+    height: 300px;
+    width: 480px;
+    position: absolute;
+    bottom: 0;
+    
+   
+   
+}
+/* ************************************************************************************************************************************media query */
+@media only screen and (max-width:667px) and (min-width:300px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .global{
+        height: 400px;
+        width:0px;
+         position: relative; 
+        
+    }
+    .parent{
+        float: left;
+        height: 700px;
+        width:680px;
+         position: relative;
+        left: 50px; 
+        /* left: -180; */
+        
+    }
+    .aa{
+        height: 200px;
+        z-index: -1;
+        background-color: white;
+        /*  opacity: 0.8; */
+    
+    }
+    .ll{
+        width: 100px;
+        height: 100px;
+        background-color: #FFFFFF;
+    }
+    
+    body{
+        background-color: #3D087B;
+    }
+    .clock{
+        height: 10vh;
+        width: 10vw;
+         margin-top: 40px; 
+        margin-left: 100px; 
+      
+    }
+    img{
+        height: 8vh;
+        width: 10vw;
+        /* margin:40px 0px 0px 100px; */
+    }
+    .main{
+        height: 350px;
+        width: 560px;
+        background-color: #FFFFFF;
+        margin:30px 0px 0px 20px;
+        border-radius: 20px;
+        position: absolute;
+        left:0;
+        top: 350px;
+    }
+    #wake{
+        font-size: x-large; 
+        color:blue;
+        margin-left: 20px; 
+        
+    
+       
+    
+    }
+    .tim{
+        width: 200px;
+        height: 40px;
+    }
+    
+    #k,#l{
+    width: 34px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 1;
+    
+    }
+    #g{
+    width: 34px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 1;
+    }
+    .time,.eve,.tee{
+        margin-top: 20px;
+    }
+    .good{
+        height: 200px;
+        width: 540px;
+        display: grid;
+        grid-template-columns: auto  300px;
+        /* grid-template-rows: 40x; */
+        margin-left: 20px;
+        /* margin-top:0px; */
+        gap: 8px;
+        position: absolute;
+        top: 1200px;
+        left: 0;
+        
+    }
+    #a{
+        /* border: 2px solid black; */
+        grid-column: 1/3;
+        font: normal normal 900 27px/34px Bauhaus Hv BT;
+        background-color: #9140B5;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 5px;
+    
+        
+    }
+    .b{
+        /* border: 2px solid black; */
+        background-image: linear-gradient(to left,#FC5EFF,#6E54EC);
+        font: normal normal 600 24px/38px Manrope;
+        text-align: center;
+        border-radius: 5px;
+        color: #FFFFFF;
+        padding:10px;
+        overflow: hidden;   
+        position: relative;
+        
+        
+    }
+    .b:hover{
+        background-image: linear-gradient(to left,#4825f9,#e411e8);
+    
+    }
+    #o::after,#o::before{
+        content: "SET ALARM";
+        transition: all;
+         position: absolute;
+         left: 50px;
+         top: 20px;
+         font-size: 20px;
+         font: normal normal 600 24px/38px Manrope;
+            
+    }
+    #o:hover:after{
+        transform: translatex(-200px); 
+    
+    }
+    #o::before{
+        content: "PARTY TIME";
+       left: -150px;
+    }
+    #o:hover:before{
+        left: 50px;
+    }
+    
+    
+    
+    .c{
+        /* border: 2px solid black; */
+        grid-column: 2/3;
+        grid-row: 2/4;
+        color: #FC5EFF;
+        border-radius: 5px;
+        text-align: center;
+        font: normal normal bold 15px/25px Manrope;
+        background-color: #9140B5;
+    }
+    /* /* **************************************************************************************************************************************************************** *
+    */
+     
+    .parent2{
+        height: 710px;  
+        width:600px;
+        float: right;
+        margin-right: 150px;
+        position: absolute;
+        left:50px;
+        top: 0;   
+    }
+    .clockk{
+        height: 150px;
+        width: 550px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-right:20px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+       
+        
+    }
+    
+    .box{
+        height: 70px;
+        width: 80px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 4px 4px 0px white;
+    
+    }
+    #box1{
+        font-size: 2em;
+        text-align: center;   
+    }
+    
+    #box4{
+        font-size: 2em;
+        border: 2px solid black;
+       text-align: center;
+        background-color: #F6E2FF;
+    }
+    #box2{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F6E2FF;
+    
+    }
+    #box3{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F6E2FF;
+        
+    }
+    #box5{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F25CFE;
+    }
+    .dot{
+        color: #F25CFE;
+        font-size: 50px;
+    }
+     #shadow1{
+        height: 100px;
+        width: 450px;
+        background-color: hsla(0, 0%, 100%, 0.758);
+        border-radius: 10px;
+        position: absolute;
+        top: 90px; 
+        right: 60px;
+        z-index: -1; 
+    } 
+    #shadow2{ 
+        height: 100px;
+        width: 400px;
+        background-color: #ad75acf4;
+        border-radius: 10px;
+        position: absolute;
+        top: 105px; 
+        right:90px;
+        z-index: -2; 
+     } 
+    .msg{
+        height: 100px;
+        width: 550px;
+        background-color: #FFFFFF;
+        margin: auto;
+        margin-top: 50px;
+        position: absolute;
+        top: 200px;
+        left: 35px;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:20px;
+    }
+    #grab{
+        font-size:2em;
+        color:blue;
+        font-weight: bold;
+        font-family: sans-serif;
+        
+        
+    }
+    .morning{
+        height: 380px;
+        width: 550px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+        top: 740px;
+        margin-right: 20px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #last{
+        height: 300px;
+        width: 480px;
+        position: absolute;
+        bottom: 0;
+        
+       
+       
+    }
+
+        
+}
+@media only screen and (max-width:1200px) and (min-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .global{
+        height: 400px;
+        width:0px;
+        /* position: relative;
+        left: -40; */
+    }
+    .parent{
+        float: left;
+        height: 700px;
+        width:680px;
+         position: relative;
+        left: 50px; 
+        /* left: -180; */
+        
+    }
+    .aa{
+        height: 200px;
+        z-index: -1;
+        background-color: white;
+        /*  opacity: 0.8; */
+    
+    }
+    .ll{
+        width: 100px;
+        height: 100px;
+        background-color: #FFFFFF;
+    }
+    
+    body{
+        background-color: #3D087B;
+    }
+    .clock{
+        height: 10vh;
+        width: 10vw;
+         margin-top: 40px; 
+        margin-left: 100px; 
+      
+    }
+    img{
+        height: 8vh;
+        width: 30vw;
+        /* margin:40px 0px 0px 100px; */
+    }
+    .main{
+        height: 350px;
+        width: 640px;
+        background-color: #FFFFFF;
+        margin:30px 0px 0px 0px;
+        border-radius: 20px;
+        position: absolute;
+        left:0;
+        top: 520px;
+    }
+    #wake{
+        font-size: x-large; 
+        color:blue;
+        margin-left: 20px; 
+        
+    
+       
+    
+    }
+    .tim{
+        width: 300px;
+        height: 30px;
+    }
+    
+    #k,#l{
+    width: 34px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 1;
+    
+    }
+    #g{
+    width: 34px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 20px;
+    opacity: 1;
+    }
+    .time,.eve,.tee{
+        margin-top: 20px;
+    }
+    .good{
+        height: 200px;
+        width: 620px;
+        display: grid;
+        grid-template-columns: auto  300px;
+        /* grid-template-rows: 40x; */
+      /* margin-left:20px; */
+        /* margin-top:0px; */
+        gap: 8px;
+        position: absolute;
+        top: 1350px;
+       
+        
+    }
+    #a{
+        /* border: 2px solid black; */
+        grid-column: 1/3;
+        font: normal normal 900 27px/34px Bauhaus Hv BT;
+        background-color: #9140B5;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 5px;
+    
+        
+    }
+    .b{
+        /* border: 2px solid black; */
+        background-image: linear-gradient(to left,#FC5EFF,#6E54EC);
+        font: normal normal 600 24px/38px Manrope;
+        text-align: center;
+        border-radius: 5px;
+        color: #FFFFFF;
+        padding:10px;
+        overflow: hidden;   
+        position: relative;
+        
+        
+    }
+    .b:hover{
+        background-image: linear-gradient(to left,#4825f9,#e411e8);
+    
+    }
+    #o::after,#o::before{
+        content: "SET ALARM";
+        transition: all;
+         position: absolute;
+         left: 50px;
+         top: 20px;
+         font-size: 20px;
+         font: normal normal 600 24px/38px Manrope;
+            
+    }
+    #o:hover:after{
+        transform: translatex(-200px); 
+    
+    }
+    #o::before{
+        content: "PARTY TIME";
+       left: -150px;
+    }
+    #o:hover:before{
+        left: 50px;
+    }
+    
+    
+    
+    .c{
+        /* border: 2px solid black; */
+        grid-column: 2/3;
+        grid-row: 2/4;
+        color: #FC5EFF;
+        border-radius: 5px;
+        text-align: center;
+        font: normal normal bold 15px/25px Manrope;
+        background-color: #9140B5;
+    }
+    /* /* **************************************************************************************************************************************************************** *
+    */
+     /* .global2{
+        float: right;
+        height: 600px;
+        width: 400px;
+        border: 1px solid black;
+        height: 400px;
+        width: 0px;
+        position: relative;
+        top: 0;
+    }  */
+    .parent2{
+        height: 710px;  
+        width:600px;
+        float: right;
+        margin-right: 150px;
+        position: absolute;
+        right:20px;
+        top: 0;   
+    }
+    .clockk{
+        height: 150px;
+        width: 640px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 20px;
+        margin-right:20px;
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+        /* z-index: 0; */
+        
+    }
+    /* .yahoo{
+        position: relative;
+    } */
+    .box{
+        height: 70px;
+        width: 80px;
+        border-radius: 5px;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 4px 4px 0px white;
+    
+    }
+    #box1{
+        font-size: 2em;
+        text-align: center;
+       
+        
+    }
+    
+    #box4{
+        font-size: 2em;
+        border: 2px solid black;
+       
+       text-align: center;
+        
+        background-color: #F6E2FF;
+        
+    
+    }
+    #box2{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F6E2FF;
+    
+    }
+    #box3{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F6E2FF;
+        
+    }
+    #box5{
+        font-size: 2em;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #F25CFE;
+    }
+    .dot{
+        color: #F25CFE;
+        font-size: 50px;
+    }
+     #shadow1{
+        height: 100px;
+        width: 530px;
+        background-color: hsla(0, 0%, 100%, 0.758);
+        border-radius: 10px;
+        position: absolute;
+        top: 235px; 
+        left:100px;
+        z-index: -1; 
+    } 
+    #shadow2{ 
+        height: 100px;
+        width: 380px;
+        background-color: #ad75acf4;
+        border-radius: 10px;
+        position: absolute;
+        top: 245px; 
+        left:180px;
+        z-index: -2; 
+     } 
+    .msg{
+        height: 150px;
+        width: 640px;
+        background-color: #FFFFFF;
+        margin: auto;
+        margin-top: 50px;
+        border-radius:20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:50px;
+        position: absolute;
+        top: 320px;
+    }
+    #grab{
+        font-size:2em;
+        color:blue;
+        font-weight: bold;
+        font-family: sans-serif;
+        
+        
+    }
+    .morning{
+        height: 380px;
+        width: 630px;
+        box-sizing: border-box;
+        border-radius: 20px;
+          /* margin-top: 20px; */
+        position: absolute;
+        left:  60px;
+        top: 910px;
+        /* margin-left: 180px; */
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #last{
+        height: 300px;
+        width: 480px;
+        position: absolute;
+        bottom: 0;
+        
+       
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
